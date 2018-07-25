@@ -1,5 +1,9 @@
 # Introduction
 
+This script allows the administrator to execute PowerShell workflows under the context of SYSTEM.
+
+For more information visit: [PowerShell Workflow Controller](http://hernanjlarrea.com/index.php/powershell-workflow-controller/)
+
 # How to use
 
 To start a workflow under the SYSTEM context: `.\Invoke-WorkflowController.ps1 -Start -WorkflowScript <workflowScript> -Workflow <workflowName>`, where `WorkflowScript` is the ps1 file containing the workflow and the call to the workflow, for example:
