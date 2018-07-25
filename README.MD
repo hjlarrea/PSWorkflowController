@@ -1,16 +1,15 @@
-#Introduction
+# Introduction
 
-#How to use
+# How to use
 
 `.\Invoke-WorkflowController.ps1 -Start -WorkflowScript <workflowScript>`
 Where `WorkflowScript` is the file containing the workflow and the call to the workflow, for example:
-`workflow Test-Workflow {
-    Do-Stuff
-}
+`workflow Test-Workflow {`
+`    Do-Stuff`
+`}`
+` `
+`Test-Workflow`
 
-Test-Workflow
-`
-
-#Improvements (TODO)
+# Improvements (TODO)
 - Logging, improved information delivery to the user
 - Documentation in powershell format.
