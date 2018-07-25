@@ -4,10 +4,15 @@
 
 `.\Invoke-WorkflowController.ps1 -Start -WorkflowScript <workflowScript>`
 Where `WorkflowScript` is the file containing the workflow and the call to the workflow, for example:
+
 `workflow Test-Workflow {`
-`    Do-Stuff\n`
+
+`    Do-Stuff`
+
 `}`
+
 ` `
+
 `Test-Workflow`
 
 # Improvements (TODO)
