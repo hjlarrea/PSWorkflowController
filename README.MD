@@ -7,11 +7,9 @@ Where `WorkflowScript` is the file containing the workflow and the call to the w
 
 `workflow Test-Workflow {`
 
-`    Do-Stuff`
+    `Do-Stuff`
 
 `}`
-
-` `
 
 `Test-Workflow`
 
