@@ -35,7 +35,27 @@ Describe -Name "reposiroty structure tests"{
     }
 
     It -name "Script Analyzer should not produce any recommendations" {
-        Invoke-ScriptAnalyzer -Path $scriptToAnalyze | Should -BeNullorEmpty
+        Invoke-ScriptAnalyzer -Path $scriptToAnalyze -IncludeRule @('PSUseApprovedVerbs',
+            'PSReservedCmdletChar',
+            'PSReservedParams',
+            'PSShouldProcess',
+            'PSUseShouldProcessForStateChangingFunctions',
+            'PSUseSingularNouns',
+            'PSMissingModuleManifestField',
+            'PSAvoidDefaultValueSwitchParameter',
+            'PSAvoidUsingCmdletAliases',
+            'PSAvoidUsingWMICmdlet',
+            'PSAvoidUsingEmptyCatchBlock',
+            'PSUseCmdletCorrectly',
+            'PSUseShouldProcessForStateChangingFunctions',
+            'PSAvoidUsingPositionalParameters',
+            'PSAvoidGlobalVars',
+            'PSUseDeclaredVarsMoreThanAssignments',
+            'PSAvoidUsingInvokeExpression',
+            'PSAvoidUsingPlainTextForPassword',
+            'PSAvoidUsingComputerNameHardcoded',
+            'PSUsePSCredentialType',
+            'PSDSC*' ) | Should -BeNullorEmpty
     }
 }
 
