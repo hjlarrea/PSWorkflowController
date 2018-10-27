@@ -1,3 +1,5 @@
+[![Build Status](https://hjlarrea.visualstudio.com/PSWorkflowController/_apis/build/status/PSWorkflowController)](https://hjlarrea.visualstudio.com/PSWorkflowController/_build/latest?definitionId=1)
+
 # Introduction
 
 This script allows the administrator to execute PowerShell workflows under the context of SYSTEM.
